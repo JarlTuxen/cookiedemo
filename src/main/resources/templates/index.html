@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hjemmeside</title>
+</head>
+<body>
+    <h1>Velkommen til hjemmesiden!</h1>
+    <div>
+        I dag kalder jeg dig:
+        <span th:if="${session.containsKey('username')}" th:text="${session.username}">brugernavn</span>
+    </div>
+
+</body>
+</html>
