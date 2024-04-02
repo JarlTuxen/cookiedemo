@@ -7,7 +7,7 @@
 <body>
     <h1>Velkommen til hjemmesiden!</h1>
     <div>
-        I dag kalder jeg dig:
+        I dag kalder jeg dig for:
         <span th:if="${session.containsKey('username')}" th:text="${session.username}">brugernavn</span>
     </div>
 
